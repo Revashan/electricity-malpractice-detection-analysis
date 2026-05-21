@@ -59,14 +59,17 @@ Dataset source: Kaggle
 
 ## Power BI Dashboard Pages
 
-### 1. Executive Summary
+### 1. Executive Summary - 
+## 📊 Power BI Dashboard Overview
+
+### Executive Dashboard
+
+![Executive Dashboard](powerbi/Electricity-malpractise-reading-dashboard.png)
 Shows total customers, total consumption, fraud customers, fraud rate, and suspicious customers.
 
 ### 2. Fraud Analysis
 Shows fraud by region, customer type, month, and customer risk level.
-
-### 3. Customer Consumption Analysis
-Shows detailed consumption trends and suspicious usage patterns.
+![Fraud analysis Dashboard](powerbi/Electricity-gas-malpractise.png)
 
 ## Key Insights
 
