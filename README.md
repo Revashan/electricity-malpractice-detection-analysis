@@ -69,7 +69,7 @@ Shows total customers, total consumption, fraud customers, fraud rate, and suspi
 
 ### 2. Fraud Analysis
 Shows fraud by region, customer type, month, and customer risk level.
-![Fraud analysis Dashboard](powerbi/Electricity-gas-malpractise.png)
+![Fraudanalysis Dashboard] (powerbi/Electricity-gas-malpractise.png)
 
 ## Key Insights
 
