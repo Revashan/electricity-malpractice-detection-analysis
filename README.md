@@ -1,108 +1,152 @@
-# Electricity Malpractice Detection - Data Analyst Project
+# Electricity Malpractice Detection Analytics
 
-## Project Overview
+An end-to-end **utility fraud and anomaly detection** project focused on identifying suspicious electricity consumption patterns, possible meter tampering, abnormal drops in usage, and high-risk customers for inspection.
 
-This project analyzes electricity consumption data to identify possible malpractice or fraud activities such as electricity theft, meter tampering, abnormal consumption drops, and billing irregularities.
-
-The project uses SQL, Python, and Power BI to clean, analyze, visualize, and detect suspicious customer behavior.
+---
 
 ## Business Problem
 
-Electricity providers lose revenue due to electricity theft and meter manipulation. Manual inspection is costly and time-consuming. This project helps identify high-risk customers using data-driven analysis.
+Electricity providers can lose revenue because of meter tampering, electricity theft, abnormal usage patterns, and billing irregularities.
 
-## Objective
+Manual inspection is expensive and time-consuming. Business teams need a data-driven way to prioritise customers for inspection based on risk.
 
-- Analyze electricity consumption patterns
-- Detect abnormal consumption behavior
-- Identify suspicious customers
-- Build fraud-related KPIs
-- Create an interactive Power BI dashboard
-- Support inspection teams with actionable insights
+This project helps answer:
+
+- Which customers show abnormal consumption behaviour?
+- Which regions have higher suspected malpractice?
+- Which customer types carry higher inspection risk?
+- What consumption patterns indicate possible meter tampering?
+- How can inspection teams prioritise limited resources?
+- Which risk indicators should be monitored monthly?
+
+---
 
 ## Dataset
 
-Dataset source: Kaggle
+This project uses a Kaggle electricity consumption / malpractice-style dataset.
+
+---
 
 ## Tools Used
 
-- SQL
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Power BI
-- DAX
+- **Python**: data cleaning, anomaly features, model training
+- **SQL**: consumption analysis and fraud KPI queries
+- **Scikit-learn**: classification/anomaly model
+- **Power BI**: executive monitoring and inspection priority dashboard
+- **DAX**: fraud rate, risk score, suspicious customers, inspection priority
 
+---
 
+## Key KPIs
 
-## Project Workflow
-
-1. Data Collection
-2. Data Cleaning
-3. Exploratory Data Analysis
-4. Feature Engineering
-5. Fraud Pattern Analysis
-6. Machine Learning Model
-7. Power BI Dashboard
-8. Business Insights
-
-## Key Features Created
-
-| Feature | Description |
+| KPI | Business Meaning |
 |---|---|
-| avg_customer_consumption | Average usage per customer |
-| consumption_drop_ratio | Current usage compared with average usage |
-| sudden_drop_flag | Identifies sudden usage drop |
-| high_usage_flag | Identifies unusually high consumption |
-| month | Reading month |
-| year | Reading year |
+| Total Customers | Customers monitored |
+| Total Consumption | Total electricity usage |
+| Suspicious Customers | Customers flagged by risk rules/model |
+| Suspected Fraud Rate % | Suspicious customers divided by total customers |
+| High-Risk Customers | Customers with high inspection priority |
+| Revenue at Risk | Estimated billing exposure from suspicious records |
+| Average Consumption Drop | Drop compared to previous/average usage |
+| Region Risk Score | Risk concentration by region |
+| Inspection Priority Count | Customers requiring field inspection |
 
-## Power BI Dashboard Pages
+---
 
-### 1. Executive Summary - 
-## 📊 Power BI Dashboard Overview
+## Power BI Dashboard
 
-### Executive Dashboard
+### 1. Executive Malpractice Summary
 
-![Executive Dashboard](powerbi/Electricity-malpractise-reading-dashboard.png)
-Shows total customers, total consumption, fraud customers, fraud rate, and suspicious customers.
+![Executive Malpractice Summary](powerbi/screenshots/01_executive_malpractice_summary.png)
 
-### 2. Fraud Analysis
-Shows fraud by region, customer type, month, and customer risk level.
-![Fraudanalysis Dashboard](powerbi/Electricity-gas-malpractice.png)
+Recommended visuals:
 
-## Key Insights
+- Total customers
+- Suspicious customers
+- Fraud/suspicion rate %
+- Total consumption
+- Revenue at risk
+- Suspicious customers by region
+- Monthly suspicious trend
 
-- Fraud cases are higher in selected regions.
-- Commercial customers show higher fraud risk.
-- Sudden consumption drops are strong indicators of malpractice.
-- Consumption behavior is more useful than billing amount alone.
-- Data-driven inspection prioritization can reduce manual effort.
+### 2. Fraud Pattern Analysis
 
-## Machine Learning Model
+![Fraud Pattern Analysis](powerbi/screenshots/02_fraud_pattern_analysis.png)
 
-Random Forest Classifier was used because it handles non-linear relationships and works well with structured tabular data.
+Recommended visuals:
 
-Evaluation metrics used:
+- Sudden consumption drops
+- Abnormal high usage
+- Fraud by customer type
+- Fraud by region
+- Consumption drop ratio distribution
+- Risk score distribution
+
+### 3. Inspection Priority Dashboard
+
+![Inspection Priority](powerbi/screenshots/03_inspection_priority_dashboard.png)
+
+Recommended visuals:
+
+- High-risk customer list
+- Customer ID
+- Region
+- Customer type
+- Risk score
+- Reason for flag
+- Estimated revenue impact
+- Inspection priority level
+
+### 4. Model Performance Dashboard
+
+![Model Performance](powerbi/screenshots/04_model_performance.png)
+
+Recommended visuals:
 
 - Precision
 - Recall
-- F1 Score
-- Confusion Matrix
+- F1 score
+- Confusion matrix
+- Top risk features
+- False positives and false negatives
 
-## Business Impact
+---
 
-This project can help electricity providers:
+## Key Insights
 
-- Reduce revenue loss
-- Prioritize inspection activities
-- Detect suspicious customers early
-- Improve fraud monitoring
-- Build a scalable analytics dashboard
+1. Sudden consumption drops can indicate possible meter tampering when the customer’s previous usage pattern was stable.
 
-## Conclusion
+2. Commercial or high-consumption customers should be prioritised because suspicious behaviour in these segments can create higher revenue exposure.
 
-The project demonstrates how electricity malpractice can be detected using consumption behavior, customer profile data, fraud labels, and dashboard analytics.
+3. Regional risk analysis helps inspection teams plan field visits more efficiently.
+
+4. Risk score should combine multiple indicators instead of relying on only one rule such as high usage or low usage.
+
+5. A prioritised inspection list can reduce manual effort and improve recovery focus.
+
+---
+
+## Business Recommendations
+
+| Area | Recommendation | Business Impact |
+|---|---|---|
+| Inspection Planning | Prioritise high-risk customers by risk score and revenue exposure | Improves field inspection efficiency |
+| Region Monitoring | Track suspicious customers by region monthly | Helps detect localised malpractice patterns |
+| Customer Type | Review commercial customers with sudden drops separately | Protects high-value revenue |
+| Rule + Model Approach | Combine business rules with ML risk scoring | Improves detection quality |
+| Data Quality | Validate missing meter readings and abnormal zero consumption | Reduces false alerts |
+| Operations | Create monthly inspection priority report | Supports action-oriented analytics |
+
+---
+
+## This Project Demonstrates
+
+- Utility fraud analytics
+- Anomaly detection thinking
+- Risk scoring
+- Inspection priority dashboarding
+- SQL/Python/Power BI workflow
+- Business recommendation writing
 
 ## Author
- Revathy
+ Revathy Shanmugaraj
