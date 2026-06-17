@@ -57,9 +57,9 @@ This project uses a Kaggle electricity consumption / malpractice-style dataset.
 
 ### 1. Executive Malpractice Summary
 
-![Executive Malpractice Summary](powerbi/screenshots/01_executive_malpractice_summary.png)
+![Executive Malpractice Summary](powerbi/screenshots/electricity_malpractice_dashboard.png)
 
-Recommended visuals:
+visuals:
 
 - Total customers
 - Suspicious customers
@@ -69,49 +69,7 @@ Recommended visuals:
 - Suspicious customers by region
 - Monthly suspicious trend
 
-### 2. Fraud Pattern Analysis
-
-![Fraud Pattern Analysis](powerbi/screenshots/02_fraud_pattern_analysis.png)
-
-Recommended visuals:
-
-- Sudden consumption drops
-- Abnormal high usage
-- Fraud by customer type
-- Fraud by region
-- Consumption drop ratio distribution
-- Risk score distribution
-
-### 3. Inspection Priority Dashboard
-
-![Inspection Priority](powerbi/screenshots/03_inspection_priority_dashboard.png)
-
-Recommended visuals:
-
-- High-risk customer list
-- Customer ID
-- Region
-- Customer type
-- Risk score
-- Reason for flag
-- Estimated revenue impact
-- Inspection priority level
-
-### 4. Model Performance Dashboard
-
-![Model Performance](powerbi/screenshots/04_model_performance.png)
-
-Recommended visuals:
-
-- Precision
-- Recall
-- F1 score
-- Confusion matrix
-- Top risk features
-- False positives and false negatives
-
----
-
+----
 ## Key Insights
 
 1. Sudden consumption drops can indicate possible meter tampering when the customer’s previous usage pattern was stable.
