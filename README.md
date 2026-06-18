@@ -88,7 +88,7 @@ Risk features engineered relative to each customer's own historical baseline:
 ### Executive Summary
 Total customers, total consumption, fraud customer count, overall fraud rate, and suspicious customer breakdown.
 
-[![Executive Dashboard](powerbi/screenshots/electricity-malpractice-reading-dashboard.png)
+[![Executive Dashboard](powerbi/screenshots/electricity-malpractice-dashboard.png)
 
 ### Fraud Analysis
 Fraud concentration by region, customer type, and month — with risk level breakdown for inspection prioritisation.
